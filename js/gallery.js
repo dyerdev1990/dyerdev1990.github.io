@@ -79,7 +79,6 @@ function buildGalleryContent(images) {
 }
 
 function changeSelected(selectedHeading) {
-  console.log("SElected headingt", selectedHeading.trim());
   const currentGrid = document.querySelector(".container-active");
   const currentHeading = document.querySelector(".gallery-heading.active");
   const newHeading = document.getElementById(selectedHeading.trim());
