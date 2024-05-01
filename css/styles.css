@@ -904,10 +904,16 @@ img {
   height: 3px;
   background-color: #fed2c5;
   position: absolute;
-  top: 3rem;
+  top: 6rem;
   left: auto;
   right: 0;
   transition: all 0.5s ease;
+}
+
+@media (min-width: 640px) {
+  .gallery-heading:after {
+    top: 3rem;
+  }
 }
 
 .gallery-heading:hover:after,
