@@ -17,15 +17,18 @@ const buildAbout = (content) => {
   const parent = document.getElementById("aboutMeContent");
   const profileImage = document.getElementById("profileImage");
   const accreditationImage = document.getElementById("accreditationImage");
+  const boysBalletImage = document.getElementById("boysBallet");
 
   const {
     profileImage: profileImageData,
     accreditationImage: accreditationImageData,
+    boysBalletImage: boysBalletImageData,
   } = content[0];
 
   // Update the images
   updateImageSrc(profileImage, profileImageData?.asset);
   updateImageSrc(accreditationImage, accreditationImageData?.asset);
+  updateImageSrc(boysBalletImage, boysBalletImageData?.asset);
 
   parent.insertAdjacentHTML(
     "beforeend",
