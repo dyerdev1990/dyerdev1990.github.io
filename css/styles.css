@@ -369,6 +369,7 @@ img {
   max-width: 100%;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+  max-width: 1650px !important;
 }
 .header__social {
   display: none;
@@ -418,6 +419,13 @@ img {
   position: relative;
   text-transform: uppercase;
 }
+
+@media only screen and (max-width: 946px) {
+  .header__nav--item {
+    font-size: 1.35rem;
+  }
+}
+
 @media only screen and (max-width: 47.99em) {
   .header__nav--item {
     font-size: 2rem;
@@ -1012,5 +1020,28 @@ img {
 
   .gallery__image-wrapper {
     padding: 0 4.4rem;
+  }
+}
+
+.no-box-shadow {
+  box-shadow: none;
+}
+
+.classes__boys-logo {
+  height: 200px;
+  width: 200px;
+}
+
+@media (max-width: 992px) {
+  .classes__boys-logo {
+    height: 175px;
+    width: 175px;
+  }
+}
+
+@media (max-width: 768px) {
+  .classes__boys-logo {
+    display: block;
+    margin: 0 auto;
   }
 }
