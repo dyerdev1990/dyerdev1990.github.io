@@ -65,6 +65,8 @@ function buildFooter() {
   footer += '<a class="footer__links--link" href="/about.html">About</a>';
   footer += '<a class="footer__links--link" href="/classes.html">Classes</a>';
   footer += '<a class="footer__links--link" href="/contact.html">Contact</a>';
+  footer +=
+    '<a class="footer__links--link" href="https://kandeezdance.co.uk/" target="_blank" rel="noreferrer noopener">Kandeez Dance</a>';
   footer += "</div>";
   footer += '<div class="footer__intouch col-12 col-sm-6 col-md-4 mb-3">';
   footer += '<p class="footer__links--header">Where To Find Us</p>';
