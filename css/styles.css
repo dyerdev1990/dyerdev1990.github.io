@@ -804,28 +804,33 @@ img {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
   position: relative;
   z-index: 10;
+  text-align: center;
 }
 .card__container {
   margin-top: -9rem;
 }
+
 .card__header {
-  background-position: center;
-  background-size: 100% 100%;
+  background-size: cover; /* Use cover for best image fit */
   background-repeat: no-repeat;
-  min-height: 40vh;
+  background-position: top;
+  min-height: unset; /* Remove min-height if present */
+  width: 100%;
+  aspect-ratio: 1 / 1; /* This keeps it square! */
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 5rem;
-  font-family: "Gayathri", sans-serif;
-  transition: all 0.5s ease;
+  font-size: 4rem;
+  font-family: Gayathri, sans-serif;
+  transition: 0.5s;
 }
-@media only screen and (max-width: 47.99em) {
+/* @media only screen and (max-width: 47.99em) {
   .card__header {
-    height: 45vh;
+    height: 25vh;
   }
-}
+} */
+
 .card__heading {
   font-size: 2.4rem;
 }
@@ -835,6 +840,15 @@ img {
 .card__list--item {
   font-size: 1.5rem;
 }
+.card--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .footer {
   font-size: 2rem;
   width: 100%;
